@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Activate My5  - activate Entertainment</title>
+  <meta name="description" content="Activate My5 on your TV and enjoy premium content including free shows, catch-up TV, and exclusive series. Visit my5.tv/activate for more info." />
+  <meta name="keywords" content="my5.tv/activate, Activate My5, TV streaming, free content, catch-up TV" />
+  <link rel="canonical" href="/index.html" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Activate My5 on Your TV - activate Entertainment" />
+  <meta property="og:description" content="Activate My5 on your TV and enjoy premium content including free shows, catch-up TV, and exclusive series. Visit my5.tv/activate for more info." />
+  <meta property="og:url" content="/index.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- JSON-LD Structured Data for FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is My5 free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, My5 is free to use, but some premium content may require a subscription or purchase."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use My5 outside the UK?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, My5 is only available for users within the UK due to licensing restrictions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What devices support My5?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "My5 is supported on smart TVs, streaming devices, gaming consoles, smartphones, and tablets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is my activation code not working?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ensure you’ve entered the code correctly on my5.tv/activate. If the issue persists, restart the app or your device."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an account to use My5?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you need a free My5 account to activate and access content."
+        }
+      }
+    ]
+  }
+  </script>
+<style>
+    li, p{
+        font-size: 17px;
+        margin: 15px 0;
+    }
+    h3{
+        font-size: 22px !important;
+        font-weight: 800 !important;
+    }
+    /* From Uiverse.io by Li-Deheng */ 
+.btn-conteiner {
+  display: flex;
+  justify-content: center;
+  --color-text: #ffffff;
+  --color-background: #08bd4a;
+  --color-outline: #045c24;
+  --color-shadow: #00000080;
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  padding: 5px 30px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  /* font-size: 30px; */
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: 1s;
+  border-radius: 100px;
+  box-shadow: 0 0 0.2em 0 var(--color-background);
+}
+
+.btn-content:hover, .btn-content:focus {
+  transition: 0.5s;
+  -webkit-animation: btn-content 1s;
+  animation: btn-content 1s;
+  outline: 0.1em solid transparent;
+  outline-offset: 0.2em;
+  box-shadow: 0 0 0.4em 0 var(--color-background);
+}
+
+.btn-content .icon-arrow {
+  transition: 0.5s;
+  margin-right: 0px;
+  transform: scale(0.6);
+}
+
+.btn-content:hover .icon-arrow {
+  transition: 0.5s;
+  margin-right: 25px;
+}
+
+.icon-arrow {
+  width: 20px;
+  margin-left: 15px;
+  position: relative;
+  top: 6%;
+}
+  
+/* SVG */
+#arrow-icon-one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+#arrow-icon-two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.btn-content:hover #arrow-icon-three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.btn-content:hover #arrow-icon-one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.btn-content:hover #arrow-icon-two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: var(--color-background);
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+/* Button animations */
+@-webkit-keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+@keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+</style>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="absolute inset-x-0 top-0 z-10 w-full">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" title="" class="flex text-white">
+                        <img class="w-auto h-8" src="/logo.png" alt="" />
+                       <span class="ms-4 text-xl"> my5.tv/activate</span>
+                    </a>
+                </div>
+
+                <div class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
+                    <a href="#" title="" class="text-base ms-8 text-white transition-all duration-200 hover:text-opacity-80"> Home </a>
+
+                  
+                </div>
+
+                <div class="lg:flex lg:items-center lg:justify-end lg:space-x-6 sm:ml-auto">
+                 
+                </div>
+
+     
+            </div>
+        </div>
+    </header>
+    <div class="bg-gradient-to-b from-[#101212] relative to-[#08201D]">
+    
+        <section class="relative lg:min-h-[1000px] pt-24 pb-10 sm:pt-32 sm:pb-16 lg:pb-24">
+            <div class="absolute inset-x-0 bottom-0 z-10 hidden lg:flex">
+                <img class="hidden w-full lg:block" src="/bg.svg" alt="" />
+                <!-- <img class="block w-full lg:hidden" src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/5/credit-cards-mobile.png" alt="" /> -->
+            </div>
+    
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-20">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl font-bold sm:text-6xl">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-white"> Enjoy Premium Content on your tv with my5.tv/activate </span>
+                    </h1>
+                    <p class="mt-5 text-base text-white sm:text-xl"> Your gateway to a world of shows, movies, and exclusive content. Activate My5 now and start streaming!</p>
+    
+
+<div class="btn-conteiner mt-16">
+    <a class="btn-content" href="#">
+      <span class="btn-title uppercase lg:text-3xl md:text-2xl text-l">Proceed to Activate   </span>
+      <span class="icon-arrow">
+        <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+            <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+            <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+          </g>
+        </svg>
+      </span> 
+    </a>
+  </div>
+                  
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+
+
+ <div class="mx-auto lg:p-16 md:p-16 flex flex-col justify-center items-center">
+
+
+  <!-- What is My5 Section -->
+  <section class="py-12 bg-white ">
+    <div class="container mx-auto px-4">
+      <h2 class="border-l-4 border-blue-500 pl-4 d:text-5xl lg:text-5xl font-bold mb-4">What is My5?</h2>
+      <p class="mb-6">
+        My5.tv/activate is your gateway to a world of entertainment, offering a large library of shows, movies, and exclusive content.
+        Whether you're catching up on your favorite series or exploring new genres, My5 brings it all to your TV screen.
+        But first, you need to activate My5 on your device. This guide will walk you through everything you need to know about My5, its benefits, and how to activate it on your TV effortlessly.
+      </p>
+      <p class="mb-6">
+        My5 tv activate is a popular streaming platform that allows you to access a wide range of free and premium content from top UK channels like Channel 5, 5STAR, 5USA, and more.
+        From drama and comedy to documentaries and reality TV, My5 has something for everyone.
+      </p>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+   
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="border-l-4 border-blue-500 pl-4 d:text-5xl lg:text-5xl font-bold mb-8 ">Benefits of My5</h2>
+      <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <!-- Card 1 -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2">Free Content</h3>
+          <p class="text-gray-600">
+            Enjoy a variety of shows and movies without any subscription fees.
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2">Catch-Up TV</h3>
+          <p class="text-gray-600">
+            Never miss an episode with on-demand access to recent broadcasts.
+          </p>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2">Exclusive Shows</h3>
+          <p class="text-gray-600">
+            Access original content and exclusive series only available on My5.
+          </p>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2">User-Friendly Interface</h3>
+          <p class="text-gray-600">
+            Easy navigation and personalized recommendations.
+          </p>
+        </div>
+        <!-- Card 5 -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2">Multi-Device Support</h3>
+          <p class="text-gray-600">
+            Watch on your TV, smartphone, tablet, or laptop.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- How to Activate Section -->
+  <section class="py-12 bg-gray-100 ">
+    <div class="container mx-auto px-4">
+      <h2 class="border-l-4 border-blue-500 pl-4 d:text-5xl lg:text-5xl font-bold mb-4 ">How to Activate My5 on Your TV</h2>
+   
+      <h3 class="mt-8">
+        Method for Activate My5
+      </h3>
+      
+<div class="grid lg:grid-cols-2 md:grid-cols-2">
+ <!-- Activating on a Smart TV -->
+ <div class="p-8 ">
+    <h3 class="text-xl font-semibold mb-2">1. Activating My5 on a Smart TV</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>
+        <strong>Download the My5 App:</strong> Turn on your smart TV and navigate to the app store (e.g., Samsung Smart Hub, LG Content Store, or Google Play Store). Search for the My5 app and download it.
+      </li>
+      <li>
+        <strong>Launch the My5 App:</strong> Open the app on your TV. You’ll see an activation code displayed on the screen.
+      </li>
+      <li>
+        <strong>Visit my5.tv/activate:</strong> On your smartphone, tablet, or computer, go to <a href="my.5.link" class="text-blue-600 underline">my5.tv/activate</a> and enter the activation code.
+      </li>
+      <li>
+        <strong>Sign In or Create an Account:</strong> If you already have a My5 account, sign in. If not, create a free account.
+      </li>
+      <li>
+        <strong>Start Streaming:</strong> Once activated, your TV screen will refresh, and you’ll have full access to My5’s content library.
+      </li>
+    </ol>
+  </div>
+
+  <!-- Activating on Streaming Devices -->
+  <div class="p-8">
+    <h3 class="text-xl font-semibold mb-2">2. Activating My5 on Streaming Devices (Roku, Amazon Fire Stick)</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>
+       Go to the app store on your streaming device and install the My5 app.
+      </li>
+      <li>
+         Launch the app and note the activation code displayed on your TV.
+      </li>
+      <li>
+        On another device, visit <a href="my.5.link" class="text-blue-600 underline">my5.tv/activate</a> and enter the code.
+      </li>
+      <li>
+        Sign in to your My5 account or create one if needed.
+      </li>
+      <li>
+       Your streaming device will refresh, and you can start watching your favorite shows.
+      </li>
+    </ol>
+  </div>
+
+  <!-- Activating on Gaming Consoles -->
+  <div class="p-8">
+    <h3 class="text-xl font-semibold mb-2">3. Activating My5 on Gaming Consoles (PlayStation, Xbox)</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>
+ On your console, visit the app store (PlayStation Store or Microsoft Store) and download the My5 app.
+      </li>
+      <li>
+        Open the app to see the activation code.
+      </li>
+      <li>
+   On a separate device, go to <a href="my.5.link" class="text-blue-600 underline">my5.tv/activate</a> and enter the code.
+      </li>
+      <li>
+      Log in to your account or create one if you're new.
+      </li>
+      <li>
+      Your console will refresh, granting you access to My5's content.
+      </li>
+    </ol>
+  </div>
+
+  <!-- Activating on Mobile Devices -->
+  <div class="p-8">
+    <h3 class="text-xl font-semibold mb-2">4. Activating My5 on Mobile Devices (Smartphones, Tablets)</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>
+      Go to the App Store or Google Play Store and download the My5 app.
+      </li>
+      <li>
+     Launch the app and sign in or create an account.
+      </li>
+      <li>
+      Use Chromecast or AirPlay to cast the content from your mobile device to your TV.
+      </li>
+    </ol>
+  </div>
+
+  <!-- Activating on Web Browser -->
+  <div  class="p-8">
+    <h3 class="text-xl font-semibold mb-2">5.Activating My5 on a Web Browser (Laptop/Desktop)</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>
+    Open a web browser and go to <a href="my.5.link" class="text-blue-600 underline">my5.tv/activate</a>.
+      </li>
+      <li>
+       Log in or register for a new account.
+      </li>
+      <li>
+  Browse the content library and start watching directly on your browser.
+      </li>
+    </ol>
+  </div>
+</div>
+     
+    </div>
+  </section>
+
+  <!-- Troubleshooting Section -->
+  <section class="py-12 w-full">
+    <div class="px-4  mx-auto">
+      <h2 class="md:d:text-5xl lg:text-5xl lg:d:text-5xl lg:text-5xl  font-bold mb-6 border-l-4 border-blue-500 pl-4">Troubleshooting Process</h2>
+      <p class="text-lg text-gray-700 mb-8">
+        Follow these detailed steps to resolve common issues with My5. Each step is designed to help you identify and fix potential problems.
+      </p>
+      <ul class=" space-y-4 grid lg:grid-cols-2 lg:grid-cols-2">
+        <li>
+          <strong> Verify Your Activation Code</strong>
+          <p class="ml-6 text-gray-600">
+            Double-check that you have entered the activation code correctly. Look out for any typos, extra spaces, or case sensitivity issues. If unsure, re-enter the code carefully.
+          </p>
+        </li>
+        <li>
+          <strong>Restart the My5 App and Your Device</strong>
+          <p class="ml-6 text-gray-600">
+            Close the My5 app completely, then reopen it. If the issue persists, restart your device to clear any temporary glitches that might be affecting performance.
+          </p>
+        </li>
+        <li>
+          <strong>Check Your Internet Connection</strong>
+          <p class="ml-6 text-gray-600">
+            Ensure your device is connected to a stable and reliable internet network. Test your connection by accessing other apps or websites. If you encounter connectivity issues, try switching networks or resetting your router.
+          </p>
+        </li>
+        <li>
+          <strong>Update the My5 App</strong>
+          <p class="ml-6 text-gray-600">
+            Verify that you are using the latest version of the My5 app. Visit your device’s app store and check for updates. Installing the latest version can resolve known bugs and improve overall performance.
+          </p>
+        </li>
+        <li>
+          <strong> Verify Device Compatibility</strong>
+          <p class="ml-6 text-gray-600">
+            Confirm that your device is compatible with My5. Refer to the official My5 website or your device’s app store listing for a list of supported devices. Incompatibility may cause functionality issues.
+          </p>
+        </li>
+        <li>
+          <strong>Contact Support</strong>
+          <p class="ml-6 text-gray-600">
+            If you’ve followed all the steps and the problem still isn’t resolved, reach out to My5 support. Provide detailed information about the issue, including any error messages and the steps you’ve already tried. This information will help the support team diagnose and resolve your problem more quickly.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+
+  <!-- FAQ Section (Populated via JS) -->
+ <!-- New FAQ Section with Dynamic Content -->
+<section class="py-10 bg-gray-900 sm:py-16 lg:py-24">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8">
+      <!-- Header -->
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="border-l-4 border-blue-500 pl-4 d:text-5xl lg:text-5xl font-bold leading-tight text-white sm:text-4xl lg:d:text-5xl lg:text-5xl">
+          Questions & Answers
+        </h2>
+        <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-300">
+          questions and answers about my5
+        </p>
+      </div>
+  
+      <!-- FAQ Grid Container (Dynamic FAQ items will be injected here) -->
+      <div id="faq-grid" class="grid grid-cols-1 mt-12 md:mt-20 md:grid-cols-2 gap-y-16 gap-x-20">
+        <!-- Dynamic FAQ items -->
+      </div>
+  
+      <!-- Support Call-to-Action -->
+      <div class="flex items-center justify-center mt-12 md:mt-20">
+        <div class="px-8 py-4 text-center bg-gray-800 rounded-full">
+          <p class="text-gray-50">
+            Didn’t find the answer you are looking for?
+            <a href="#" title="" class="text-yellow-300 transition-all duration-200 hover:text-yellow-400 focus:text-yellow-400 hover:underline">
+              Contact our support
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FAQ Data and Rendering Script -->
+  <script>
+    // Sample FAQ JSON data
+    const faqData = [
+  {
+    "question": "Is My5 free to use?",
+    "answer": "Yes, My5 is free to use, offering a wide range of shows, movies, and live channels at no cost. However, some premium content, special events, or exclusive on-demand shows may require a subscription or one-time purchase. We recommend checking our pricing and promotions page for the most up-to-date information on any paid offerings."
+  },
+  {
+    "question": "Can I use My5 outside the UK?",
+    "answer": "No, My5 is currently only available for users within the UK due to content licensing agreements that restrict usage to this region. Our agreements with content providers are negotiated on a regional basis, so if you are outside the UK, you may encounter geo-blocking restrictions. We are continually working to expand our reach and hope to offer international access in the future."
+  },
+  {
+    "question": "What devices support My5?",
+    "answer": "My5 is designed to work on a variety of devices to suit your viewing needs. This includes smart TVs, popular streaming devices like Roku, Amazon Fire TV, and Apple TV, as well as gaming consoles such as PlayStation and Xbox. In addition, the service is accessible on smartphones and tablets running iOS and Android. For the best experience, please refer to our website for detailed system requirements and compatibility guidelines."
+  },
+  {
+    "question": "Why is my activation code not working?",
+    "answer": "If your activation code isn’t working, first double-check that you’ve entered it correctly at my5.tv/activate, ensuring there are no typos or extra spaces. Keep in mind that the code is case-sensitive, so it must match exactly as provided. If you continue to experience issues, try restarting the app and your device. Additionally, confirm that the activation code is still valid and has not expired or been used already. Should the problem persist, please contact our customer support for further assistance."
+  },
+  {
+    "question": "Do I need an account to use My5?",
+    "answer": "Yes, a free My5 account is required to activate the service and access our content. Creating an account not only enables you to watch your favorite shows and movies but also allows you to customize your viewing experience, receive personalized recommendations, and stay updated on new content. The registration process is quick, secure, and completely free with no hidden fees."
+  }
+];
+
+  
+    // Function to render FAQ items into the #faq-grid container
+    function renderFAQs(faqs) {
+      const faqContainer = document.getElementById('faq-grid');
+      faqs.forEach(item => {
+        // Create the FAQ item container
+        const faqItem = document.createElement('div');
+        faqItem.className = "flex items-start";
+        
+        // Set the inner HTML with the new structure
+        faqItem.innerHTML = `
+          <div class="flex items-center justify-center flex-shrink-0 w-8 h-8 bg-gray-700 rounded-full">
+            <span class="text-lg font-semibold text-white">?</span>
+          </div>
+          <div class="ml-4">
+            <p class="text-xl font-semibold text-white">${item.question}</p>
+            <p class="mt-4 text-base text-gray-400">${item.answer}</p>
+          </div>
+        `;
+        // Append the FAQ item to the container
+        faqContainer.appendChild(faqItem);
+      });
+    }
+  
+    // Render FAQs when the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      renderFAQs(faqData);
+    });
+  </script>
+  
+
+  <!-- Conclusion Section -->
+  <section class="py-12 ">
+    <div class="container mx-auto px-4">
+      <h2 class="border-l-4 border-blue-500 pl-4 d:text-5xl lg:text-5xl font-bold mb-4 ">Conclusion</h2>
+      <p class="mb-6">
+        Activating My5 on your TV is quick and easy, giving you instant access to a world of entertainment.
+        Whether you’re binge-watching your favorite shows or exploring new content, My5 has it all.
+        Follow the steps above, and you’ll be streaming in no time. Visit
+        <a href="my.5.link" class="text-blue-600 underline">my5.tv/activate</a> today and unlock endless entertainment!
+      </p>
+    </div>
+  </section>
+ </div>
+
+  <!-- JavaScript: Fetch and Render FAQ JSON Data -->
+ 
+</body>
+</html>
